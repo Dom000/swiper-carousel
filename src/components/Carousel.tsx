@@ -9,11 +9,11 @@ const Carousel = ({ children }: { children: React.ReactNode }) => {
   console.log(active);
 
   const nextSlide = () => {
-    setActive((prevActive) => prevActive + 1); // Rotate to the next slide
+    setActive((prevActive) => prevActive + 1); 
   };
 
   const prevSlide = () => {
-    setActive((prevActive) => prevActive - 1); // Rotate to the previous slide
+    setActive((prevActive) => prevActive - 1); 
   };
   return (
     <div className="relative w-full md:w-[40rem] lg:w-[60rem] h-[15rem] md:h-[23rem] flex justify-center items-center [perspective:150px] md:[perspective:400px]  lg:[perspective:800px] [transform-style:preserve-3d]">
